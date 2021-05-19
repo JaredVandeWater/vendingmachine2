@@ -5,7 +5,7 @@ import { snackCardService } from "../Services/SnackCardService.js";
 function _drawSnackCard() {
   let template = ''
     template = /*HTML*/`
-    <div class="card m-5">
+    <div class="card m-5 my-card mx-auto">
     <img class="card-img-top my-snack-img mx-auto mt-3" src="${ProxyState.shownSnack.img}" alt="Card image cap">
         <div class="card-body">
         <div class="d-flex justify-content-between">

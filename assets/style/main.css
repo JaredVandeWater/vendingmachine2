@@ -10697,10 +10697,15 @@ main {
 
 /*# sourceMappingURL=main.css.map */
 .my-snack-img{
-  max-width: 300px;
+  max-width: 400px;
 }
 .my-dollar{
   max-width:10%;
+}
+
+.my-card{
+  max-width: 25rem;
+  min-width: 25rem;
 }
 .my-no-border{
   border: none;
