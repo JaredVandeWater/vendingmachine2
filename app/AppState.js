@@ -8,8 +8,8 @@ class AppState extends EventEmitter {
   machineSnacks = [
     new Snack('Doritos', 1.00, 'A cheesy crunchy triangle.','https://m.media-amazon.com/images/I/81S5rKXF10L._SY879_.jpg'),
     new Snack('Hersheys', 1.00, 'Chocolate that goes good with graham crackers.','https://www.kroger.com/product/images/large/front/0003400019045'),
-    new Snack('Candy Cane', 2.00, 'What a weird thing to have in here.','https://static.wikia.nocookie.net/the_candy_encyclopedia/images/a/a7/Candy_Cane.jpg/revision/latest?cb=20200516173226'),
-    new Snack('Gogurt', 1.25, 'It smells a bit rancid.','https://static.wikia.nocookie.net/ronaldmcdonald/images/4/43/T-mcdonalds-Go-GURT-Strawberry-Flavored-Low-Fat-Yogurt-Tube.jpg/revision/latest/top-crop/width/360/height/450?cb=20200309015313'),
+    new Snack('Candy Cane', 2.00, 'What a weird thing to have in here.','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvnt5AMigw0RFo8loz3DBlmU6it0eZ59jaA&usqp=CAU'),
+    new Snack('Gogurt', 1.25, 'It smells a bit rancid.','https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/DW/happy-meal/go-gurt-low-fat-strawberry-yogurt.png'),
     new Snack('Raisins', 1.50, 'Some super dried out grapes.', 'https://images.albertsons-media.com/is/image/ABS/960068917?$ecom-pdp-desktop$&defaultImage=Not_Available'),
   ]
   cash = 100.00

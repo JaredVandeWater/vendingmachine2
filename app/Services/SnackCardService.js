@@ -6,9 +6,12 @@ export class SnackCardService{
         ProxyState.shownSnack=foundSnack
         console.log(ProxyState.shownSnack);
     }
-    buySnack(price){
+    buySnack(price, name){
         if (price<= ProxyState.cash){
             ProxyState.cash -= price
+            ProxyState.mySnacks.push(name)
+            console.log(ProxyState.mySnacks);
+            ProxyState.mySnacks=ProxyState.mySnacks
         }
     }
 }

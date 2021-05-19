@@ -6,7 +6,7 @@ function _drawSnackCard() {
   let template = ''
     template = /*HTML*/`
     <div class="card m-5">
-    <img class="card-img-top my-snack-img mx-auto" src="${ProxyState.shownSnack.img}" alt="Card image cap">
+    <img class="card-img-top my-snack-img mx-auto mt-3" src="${ProxyState.shownSnack.img}" alt="Card image cap">
         <div class="card-body">
         <div class="d-flex justify-content-between">
             <h5 class="card-title">${ProxyState.shownSnack.name}</h5>
@@ -14,7 +14,7 @@ function _drawSnackCard() {
         </div>
             <p class="card-text">${ProxyState.shownSnack.description}</p>
             <div class="d-flex justify-content-center">
-            <a class="btn btn-primary text-center" onclick="app.snackCardController.buySnack(${ProxyState.shownSnack.price})">Buy</a>
+            <a class="btn btn-primary text-center" onclick="app.snackCardController.buySnack('${ProxyState.shownSnack.price}', '${ProxyState.shownSnack.name}')">Buy</a>
             </div>
         </div>
     </div>
@@ -30,8 +30,8 @@ export default class SnacksController {
   constructor() {
     ProxyState.on("shownSnack", _drawSnackCard);
   }
-    buySnack(price){
-      snackCardService.buySnack(price)
+    buySnack(price, name){
+      snackCardService.buySnack(price, name)
     }
   
 
